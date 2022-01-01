@@ -1,0 +1,10 @@
+server:
+  port: 8433
+  ssl:
+    enabled: true
+#    key-store: "classpath:cert.pfx"
+    key-store: "classpath:self.pfx"
+#    key-store: "classpath:noRoot.pfx"
+    intermediate-cer: "classpath:intermediate.cer"
+    key-store-password: "123456"
+    key-store-type: "PKCS12"
